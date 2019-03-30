@@ -1,0 +1,269 @@
+@import url(reset.css);
+@import url(ramka.css);
+
+html {
+    background: #ffc107 url(assets/t%C5%82o1.jpg) fixed no-repeat;
+    background-size: contain;
+    font-family: 'Playfair Display', serif;
+    font-size: 62.5%;
+    color: #8c8c8c;
+}
+
+
+footer p {
+    font-size: 1.5rem;
+    color: #f2f2f2;
+}
+.orange {color: #ffc107;}
+.grey {color: #8c8c8c;}
+.lightgrey {color: #f2f2f2;}
+
+
+
+h1 { 
+    font-size: 3.5rem;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 2.5rem;
+    margin: 2rem;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+h2, h3 { 
+    color: #fff;
+    background-color: #8c8c8c;
+    padding: 1rem;
+    display: inline-block;
+    
+}
+
+h2 {font-size: 3rem; border-radius: 1rem;}
+
+h3 { font-size: 2rem; margin-bottom: 6rem; margin-top: 3rem;}
+
+h4 { font-size: 2rem; padding: 1rem;}
+
+p { font-size: 1.8rem; line-height: 1.5;}
+
+.summary { 
+    font-size: 1.5rem; font-style: italic;
+    margin: 2rem;
+}
+ 
+ul{ font-size: 2rem; line-height: 1.5;}
+
+header {
+    display: none;
+    height: 20rem;
+    background: #8c8c8c;
+    color: #fff;
+    padding: 4rem
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    text-align: right;
+    list-style-image: url(assets/strzalka.svg);
+    padding-right: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+form {
+    float: left;
+    width: 40rem;
+}
+
+input, textarea {
+    background: #8c8c8c;
+    width: 40rem;
+    padding: .5rem;
+    margin: .1rem;
+    border: #d4d4d3 2px solid;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+button {
+    background: #ffc107;
+    padding: 1rem 3rem;
+    border: none;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    
+}
+
+strong {
+    font-weight: bold;
+}
+
+.deleted{
+    text-decoration: line-through;
+}
+
+.dot {
+     width: 1rem;
+    height: 1rem;
+    background: #8c8c8c;
+    border-radius: 1rem;
+    margin: 1rem auto;   
+}
+
+em {
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.button-more {
+    display: inline-block;
+    font-size: 3.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px dashed #000;
+    text-decoration: none;
+    color: #000;
+    position: absolute;
+    right: 0;
+}
+ 
+.menu {
+    background: #fff url(assets/menu.svg) center no-repeat;
+    height: 2.4rem;
+    width: 2.4rem;
+    margin: 1rem;
+    position: fixed;
+    right: 0;
+    padding: .5rem;
+    z-index: 9999;
+}
+
+section {
+    width: 60%;
+    min-width: 600px;
+    position: absolute;
+    right: 5%;
+}
+
+article {
+    margin-bottom: 6rem;
+}
+
+
+hgroup {
+    margin-left: -10%;
+    position: relative;
+    display: inline-block;
+}
+
+h2 {
+    position: absolute;
+    right: 0;
+    margin-top: -10%;
+}
+
+figure {
+    float: left;
+    margin-left: -15%;
+    margin-top: 10%;
+}
+
+.page2 {
+    margin-top: 20%;
+}
+
+.text, .text2 {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    column-count: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    z-index: 9;
+    background: #fff;
+    padding: 1rem;
+    
+}
+
+.hoverme:hover header {
+    display: block;
+}
+
+.references li {
+    list-style-image: url(assets/strzalka.svg);
+    margin-top: 1rem;
+    margin-left: 3rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+@media all and (max-width: 1260px) {
+    figure {
+    display: none;
+}
+} 
+
+@media all and (max-width: 1060px){
+    
+    html {
+        background: #ffc107;
+}
+    
+    section {
+        width: 85%;
+}
+    .bg {
+        background: url(assets/bg.jpg) fixed no-repeat;
+        background-size: cover;
+        height: 20rem;
+        
+    }
+}
+
+@media all and (max-width: 700px){
+    hgroup {
+        margin-left: 0;
+}
+    section {
+        width: 90%;
+        min-width: 300px;
+        right: 2%;
+}
+    
+    .text, .text2 {
+        column-count: 1;
+}
+    
+    input, textarea {
+        width: 20rem;
+}
+    form {
+        width: 20rem;
+}
+}
+
+@media all and (max-width: 430px){
+    nav li {
+        padding-right: 0rem;
+        font-size: 1.8rem;
+        list-style-image: none;
+}
+    h4 { font-size: 1.8rem;}
+    
+    input, textarea {
+        width: 15rem;
+}
+    form {
+        width: 15rem;
+}
+    
+    button {
+        padding: .5rem 1.5rem;
+    
+}
+}
+
